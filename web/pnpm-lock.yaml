@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^4.1.1
     version: 4.1.1
   svelte-check:
-    specifier: ^3.4.6
-    version: 3.4.6(svelte@4.1.1)
+    specifier: ^3.8.2
+    version: 3.8.2(svelte@4.1.1)
   svelte-preprocess:
     specifier: ^5.0.4
     version: 5.0.4(svelte@4.1.1)(typescript@5.1.6)
@@ -272,27 +272,6 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@nodelib/fs.scandir@2.1.5:
-    resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
-    engines: {node: '>= 8'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      run-parallel: 1.2.0
-    dev: true
-
-  /@nodelib/fs.stat@2.0.5:
-    resolution: {integrity: sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==}
-    engines: {node: '>= 8'}
-    dev: true
-
-  /@nodelib/fs.walk@1.2.8:
-    resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
-    engines: {node: '>= 8'}
-    dependencies:
-      '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.15.0
-    dev: true
-
   /@sveltejs/vite-plugin-svelte-inspector@1.0.3(@sveltejs/vite-plugin-svelte@2.4.3)(svelte@4.1.1)(vite@4.4.7):
     resolution: {integrity: sha512-Khdl5jmmPN6SUsVuqSXatKpQTMIifoQPDanaxC84m9JxIibWvSABJyHpyys0Z+1yYrxY5TTEQm+6elh0XCMaOA==}
     engines: {node: ^14.18.0 || >= 16}
@@ -392,11 +371,6 @@ packages:
 
   /buffer-crc32@0.2.13:
     resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
-    dev: true
-
-  /callsites@3.1.0:
-    resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
-    engines: {node: '>=6'}
     dev: true
 
   /chokidar@3.5.3:
@@ -503,23 +477,6 @@ packages:
       '@types/estree': 1.0.1
     dev: true
 
-  /fast-glob@3.3.1:
-    resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.5
-    dev: true
-
-  /fastq@1.15.0:
-    resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
-    dependencies:
-      reusify: 1.0.4
-    dev: true
-
   /fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -559,14 +516,6 @@ packages:
 
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
-    dev: true
-
-  /import-fresh@3.3.0:
-    resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
-    engines: {node: '>=6'}
-    dependencies:
-      parent-module: 1.0.1
-      resolve-from: 4.0.0
     dev: true
 
   /inflight@1.0.6:
@@ -626,6 +575,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
+  /magic-string@0.30.10:
+    resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
   /magic-string@0.30.2:
     resolution: {integrity: sha512-lNZdu7pewtq/ZvWUp9Wpf/x7WzMTsR26TWV03BRZrXFsv+BI6dy8RAiKgm1uM/kyR0rCfUcqvOlXKG66KhIGug==}
     engines: {node: '>=12'}
@@ -635,19 +590,6 @@ packages:
 
   /mdn-data@2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
-    dev: true
-
-  /merge2@1.4.1:
-    resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
-    engines: {node: '>= 8'}
-    dev: true
-
-  /micromatch@4.0.5:
-    resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
-    engines: {node: '>=8.6'}
-    dependencies:
-      braces: 3.0.2
-      picomatch: 2.3.1
     dev: true
 
   /min-indent@1.0.1:
@@ -698,13 +640,6 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /parent-module@1.0.1:
-    resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
-    engines: {node: '>=6'}
-    dependencies:
-      callsites: 3.1.0
-    dev: true
-
   /path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
@@ -736,25 +671,11 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /queue-microtask@1.2.3:
-    resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-    dev: true
-
   /readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
-    dev: true
-
-  /resolve-from@4.0.0:
-    resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
-    engines: {node: '>=4'}
-    dev: true
-
-  /reusify@1.0.4:
-    resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
-    engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
   /rimraf@2.7.1:
@@ -770,12 +691,6 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /run-parallel@1.2.0:
-    resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
-    dependencies:
-      queue-microtask: 1.2.3
     dev: true
 
   /sade@1.8.1:
@@ -816,20 +731,18 @@ packages:
       min-indent: 1.0.1
     dev: true
 
-  /svelte-check@3.4.6(svelte@4.1.1):
-    resolution: {integrity: sha512-OBlY8866Zh1zHQTkBMPS6psPi7o2umTUyj6JWm4SacnIHXpWFm658pG32m3dKvKFL49V4ntAkfFHKo4ztH07og==}
+  /svelte-check@3.8.2(svelte@4.1.1):
+    resolution: {integrity: sha512-n6bVsE71RPuMXZz1CalD2fXO0RIyEDHn1YdGhcFEwZrwc/HoS5wWoEvEe+mcL9tivCTRtQIdbxLLStfIHFOX+Q==}
     hasBin: true
     peerDependencies:
-      svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0
+      svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
     dependencies:
       '@jridgewell/trace-mapping': 0.3.18
       chokidar: 3.5.3
-      fast-glob: 3.3.1
-      import-fresh: 3.3.0
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 4.1.1
-      svelte-preprocess: 5.0.4(svelte@4.1.1)(typescript@5.1.6)
+      svelte-preprocess: 5.1.4(svelte@4.1.1)(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
       - '@babel/core'
@@ -893,6 +806,53 @@ packages:
       '@types/pug': 2.0.6
       detect-indent: 6.1.0
       magic-string: 0.27.0
+      sorcery: 0.11.0
+      strip-indent: 3.0.0
+      svelte: 4.1.1
+      typescript: 5.1.6
+    dev: true
+
+  /svelte-preprocess@5.1.4(svelte@4.1.1)(typescript@5.1.6):
+    resolution: {integrity: sha512-IvnbQ6D6Ao3Gg6ftiM5tdbR6aAETwjhHV+UKGf5bHGYR69RQvF1ho0JKPcbUON4vy4R7zom13jPjgdOWCQ5hDA==}
+    engines: {node: '>= 16.0.0'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3 || ^4.0.0
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.55.0
+      sugarss: ^2.0.0 || ^3.0.0 || ^4.0.0
+      svelte: ^3.23.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
+      typescript: '>=3.9.5 || ^4.0.0 || ^5.0.0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.6
+      detect-indent: 6.1.0
+      magic-string: 0.30.10
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 4.1.1
